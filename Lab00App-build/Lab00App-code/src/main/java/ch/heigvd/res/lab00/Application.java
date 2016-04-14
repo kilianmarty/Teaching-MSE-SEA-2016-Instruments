@@ -25,11 +25,11 @@ public class Application {
   }
 
   public String getMessage() {
-    return message;
+    return message; 
   }
 
   public int add(int a, int b) {
-    return a * b;
+    return a + b;
   }
 
 }
