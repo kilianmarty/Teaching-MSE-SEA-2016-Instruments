@@ -9,17 +9,32 @@ package ch.heigvd.res.lab00;
  *
  * @author kilian
  */
-public class Flute {
+public class Flute implements IInstrument{
     
     private int fluteVolume;
+    private String sound;
+    private String color;
     
     
     public Flute() {
         this.fluteVolume = 5;
+        this.sound = "pouet";
+        this. color = "golden";
     }
     
+    @Override
+    public String play() {
+        return sound; 
+    }
+    
+    @Override
     public int getSoundVolume() {
         return fluteVolume; 
+    }
+    
+    @Override
+    public String getColor() {
+        return color; 
     }
     
 }

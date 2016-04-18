@@ -21,14 +21,17 @@ public class Trumpet implements IInstrument {
         this.trumpetVolume = 10;
     }
     
+    @Override
     public String play() {
         return sound; 
     }
     
+    @Override
     public int getSoundVolume() {
         return trumpetVolume; 
     }
     
+    @Override
     public String getColor() {
         return color; 
     }
